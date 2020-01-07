@@ -1,0 +1,33 @@
+<div class="calculator card">
+
+  <input type="text" class="calculator-screen" [value]="currentNumber"/>
+
+  <div class="calculator-keys">
+    <button type="button" class="operator btn btn-info" value="+" (click)="execOperator('+')">+</button>
+    <button type="button" class="operator btn btn-info" value="-" (click)="execOperator('-')">-</button>
+    <button type="button" class="operator btn btn-info" value="*" (click)="execOperator('*')">&times;</button>
+    <button type="button" class="operator btn btn-info" value="/" (click)="execOperator('/')">&divide;</button>
+
+    <button type="button" value="7" class="btn btn-light waves-effect" (click)="insertChar('7')">7</button>
+    <button type="button" value="8" class="btn btn-light waves-effect" (click)="insertChar('8')">8</button>
+    <button type="button" value="9" class="btn btn-light waves-effect" (click)="insertChar('9')">9</button>
+
+
+    <button type="button" value="4" class="btn btn-light waves-effect" (click)="insertChar('4')">4</button>
+    <button type="button" value="5" class="btn btn-light waves-effect" (click)="insertChar('5')">5</button>
+    <button type="button" value="6" class="btn btn-light waves-effect" (click)="insertChar('6')">6</button>
+
+
+    <button type="button" value="1" class="btn btn-light waves-effect" (click)="insertChar('1')">1</button>
+    <button type="button" value="2" class="btn btn-light waves-effect" (click)="insertChar('2')">2</button>
+    <button type="button" value="3" class="btn btn-light waves-effect" (click)="insertChar('3')">3</button>
+
+
+    <button type="button" value="0" class="btn btn-light waves-effect" (click)="insertChar('0')">0</button>
+    <button type="button" class="decimal function btn btn-secondary" value="." (click)="getDecimal()">.</button>
+    <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" (click)="reset()">AC</button>
+
+    <button type="button" class="equal-sign operator btn btn-primary" value="=" (click)="execOperator('=')">=</button>
+
+  </div>
+<div>

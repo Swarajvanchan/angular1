@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <strong><i>Directives</i></strong>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="alert alert-info" *ngIf="isPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta numquam consequuntur velit inventore ex vel molestiae. Hic consequuntur corporis rerum natus, dicta inventore optio repellat quidem sit est minus?
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <ng-template [ngIf]="isPara"></ng-template>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <input type="button" class="btn btn-info" value="okay" (click)="onOkay()">
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul>
+          <li *ngFor='let mb of mob'>{{mb}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" [ngStyle]="bsObj">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem exercitationem commodi soluta ullam ipsam id omnis neque consectetur maxime, corrupti aliquid blanditiis est a, quis et vitae veniam hic nulla? 
+
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" [ngClass]="{'alert':isAl,'alert-info':isAl}">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem exercitationem commodi soluta ullam ipsam id omnis neque consectetur maxime, corrupti aliquid blanditiis est a, quis et vitae veniam hic nulla? 
+  
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <input type="button" value="Class It" class="btn btn-info" (click)="isAl=!isAl">
+        </div>
+      </div>
+
+</div>

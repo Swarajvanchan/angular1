@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row" #brd>
+    <div class="col-md-12">
+    <input type="text" #calcStr>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+    <input type="text">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="button" 
+    value="=" class="btn btn-large btn-info" (click)="calculate(calcStr)"> 
+    <input type="button" 
+    value="C" class="btn btn-large btn-info" (click)="cls()"> 
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-math-ops>
+      <p class="alert alert-info">swaraj</p>
+    </app-math-ops>
+  </div>
+</div>
+</div>
